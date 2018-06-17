@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		670538DE20D4CD8700EA4B7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 670538DD20D4CD8700EA4B7C /* AppDelegate.m */; };
+		670538E120D4CD8700EA4B7C /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670538E020D4CD8700EA4B7C /* ProductListViewController.m */; };
+		670538E620D4CD8800EA4B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670538E520D4CD8800EA4B7C /* Assets.xcassets */; };
+		670538E920D4CD8800EA4B7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670538E720D4CD8800EA4B7C /* LaunchScreen.storyboard */; };
+		670538EC20D4CD8800EA4B7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 670538EB20D4CD8800EA4B7C /* main.m */; };
+		670538F820D4D11900EA4B7C /* SamsProductDownloadUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 670538F720D4D11900EA4B7C /* SamsProductDownloadUtility.m */; };
+		670538FB20D4D1CF00EA4B7C /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 670538FA20D4D1CF00EA4B7C /* Product.m */; };
+		67053A2020D56AAF00EA4B7C /* ProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 67053A1F20D56AAF00EA4B7C /* ProductResponse.m */; };
+		67DBEB2120D5DBC8001AF462 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DBEB2020D5DBC8001AF462 /* ProductDetailViewController.m */; };
+		67DBEB2420D62483001AF462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DBEB2220D62483001AF462 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		670538D920D4CD8700EA4B7C /* SamsAppChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamsAppChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		670538DC20D4CD8700EA4B7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		670538DD20D4CD8700EA4B7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		670538DF20D4CD8700EA4B7C /* ProductListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		670538E020D4CD8700EA4B7C /* ProductListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
+		670538E520D4CD8800EA4B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		670538E820D4CD8800EA4B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		670538EA20D4CD8800EA4B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		670538EB20D4CD8800EA4B7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		670538F620D4D11900EA4B7C /* SamsProductDownloadUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SamsProductDownloadUtility.h; sourceTree = "<group>"; };
+		670538F720D4D11900EA4B7C /* SamsProductDownloadUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamsProductDownloadUtility.m; sourceTree = "<group>"; };
+		670538F920D4D1CF00EA4B7C /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		670538FA20D4D1CF00EA4B7C /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		67053A1E20D56AAF00EA4B7C /* ProductResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductResponse.h; sourceTree = "<group>"; };
+		67053A1F20D56AAF00EA4B7C /* ProductResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductResponse.m; sourceTree = "<group>"; };
+		67DBEB1F20D5DBC8001AF462 /* ProductDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		67DBEB2020D5DBC8001AF462 /* ProductDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		67DBEB2320D62483001AF462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		670538D620D4CD8700EA4B7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		670538D020D4CD8600EA4B7C = {
+			isa = PBXGroup;
+			children = (
+				670538DB20D4CD8700EA4B7C /* SamsAppChallenge */,
+				670538DA20D4CD8700EA4B7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		670538DA20D4CD8700EA4B7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				670538D920D4CD8700EA4B7C /* SamsAppChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		670538DB20D4CD8700EA4B7C /* SamsAppChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				670538DC20D4CD8700EA4B7C /* AppDelegate.h */,
+				670538DD20D4CD8700EA4B7C /* AppDelegate.m */,
+				670538F520D4D0A300EA4B7C /* Product Download */,
+				670538F220D4CFE600EA4B7C /* Model */,
+				670538F320D4CFEC00EA4B7C /* View */,
+				670538F420D4CFFB00EA4B7C /* Controller */,
+				670538E520D4CD8800EA4B7C /* Assets.xcassets */,
+				670538E720D4CD8800EA4B7C /* LaunchScreen.storyboard */,
+				670538EA20D4CD8800EA4B7C /* Info.plist */,
+				670538EB20D4CD8800EA4B7C /* main.m */,
+			);
+			path = SamsAppChallenge;
+			sourceTree = "<group>";
+		};
+		670538F220D4CFE600EA4B7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				670538F920D4D1CF00EA4B7C /* Product.h */,
+				670538FA20D4D1CF00EA4B7C /* Product.m */,
+				67053A1E20D56AAF00EA4B7C /* ProductResponse.h */,
+				67053A1F20D56AAF00EA4B7C /* ProductResponse.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		670538F320D4CFEC00EA4B7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67DBEB2220D62483001AF462 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		670538F420D4CFFB00EA4B7C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				670538DF20D4CD8700EA4B7C /* ProductListViewController.h */,
+				670538E020D4CD8700EA4B7C /* ProductListViewController.m */,
+				67DBEB1F20D5DBC8001AF462 /* ProductDetailViewController.h */,
+				67DBEB2020D5DBC8001AF462 /* ProductDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		670538F520D4D0A300EA4B7C /* Product Download */ = {
+			isa = PBXGroup;
+			children = (
+				670538F620D4D11900EA4B7C /* SamsProductDownloadUtility.h */,
+				670538F720D4D11900EA4B7C /* SamsProductDownloadUtility.m */,
+			);
+			path = "Product Download";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		670538D820D4CD8700EA4B7C /* SamsAppChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 670538EF20D4CD8800EA4B7C /* Build configuration list for PBXNativeTarget "SamsAppChallenge" */;
+			buildPhases = (
+				670538D520D4CD8700EA4B7C /* Sources */,
+				670538D620D4CD8700EA4B7C /* Frameworks */,
+				670538D720D4CD8700EA4B7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SamsAppChallenge;
+			productName = SamsAppChallenge;
+			productReference = 670538D920D4CD8700EA4B7C /* SamsAppChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		670538D120D4CD8600EA4B7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Swetha Pendyala";
+				TargetAttributes = {
+					670538D820D4CD8700EA4B7C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 670538D420D4CD8600EA4B7C /* Build configuration list for PBXProject "SamsAppChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 670538D020D4CD8600EA4B7C;
+			productRefGroup = 670538DA20D4CD8700EA4B7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				670538D820D4CD8700EA4B7C /* SamsAppChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		670538D720D4CD8700EA4B7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67DBEB2420D62483001AF462 /* Main.storyboard in Resources */,
+				670538E920D4CD8800EA4B7C /* LaunchScreen.storyboard in Resources */,
+				670538E620D4CD8800EA4B7C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		670538D520D4CD8700EA4B7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67053A2020D56AAF00EA4B7C /* ProductResponse.m in Sources */,
+				670538F820D4D11900EA4B7C /* SamsProductDownloadUtility.m in Sources */,
+				670538FB20D4D1CF00EA4B7C /* Product.m in Sources */,
+				670538E120D4CD8700EA4B7C /* ProductListViewController.m in Sources */,
+				67DBEB2120D5DBC8001AF462 /* ProductDetailViewController.m in Sources */,
+				670538EC20D4CD8800EA4B7C /* main.m in Sources */,
+				670538DE20D4CD8700EA4B7C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		670538E720D4CD8800EA4B7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				670538E820D4CD8800EA4B7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		67DBEB2220D62483001AF462 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67DBEB2320D62483001AF462 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		670538ED20D4CD8800EA4B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		670538EE20D4CD8800EA4B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		670538F020D4CD8800EA4B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PGYTVXG79;
+				INFOPLIST_FILE = SamsAppChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SP.SamsAppChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		670538F120D4CD8800EA4B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PGYTVXG79;
+				INFOPLIST_FILE = SamsAppChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SP.SamsAppChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		670538D420D4CD8600EA4B7C /* Build configuration list for PBXProject "SamsAppChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670538ED20D4CD8800EA4B7C /* Debug */,
+				670538EE20D4CD8800EA4B7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		670538EF20D4CD8800EA4B7C /* Build configuration list for PBXNativeTarget "SamsAppChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670538F020D4CD8800EA4B7C /* Debug */,
+				670538F120D4CD8800EA4B7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 670538D120D4CD8600EA4B7C /* Project object */;
+}
