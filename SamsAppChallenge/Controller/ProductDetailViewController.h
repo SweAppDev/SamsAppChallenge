@@ -12,5 +12,7 @@
 @interface ProductDetailViewController : UIViewController
 
 @property (nonatomic, strong) Product *product;
+@property (nonatomic, strong) NSArray *productList;
+@property (nonatomic, assign) NSInteger index;
 
 @end

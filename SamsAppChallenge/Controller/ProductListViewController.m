@@ -59,6 +59,8 @@
         Product *selectedProd = [_totalProductArray objectAtIndex:indexPath.row];
         ProductDetailViewController *prodDetailVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ProductDetailViewController"];
         prodDetailVC.product = selectedProd;
+        prodDetailVC.productList = _totalProductArray;
+        prodDetailVC.index = indexPath.row;
         [self.navigationController pushViewController:prodDetailVC animated:YES];
     }
 }

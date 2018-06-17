@@ -24,7 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //Swipe Gestures
+    [self initializeGestures];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -38,6 +39,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
 
 #pragma mark - UI Helpers
 - (void) populateProductDetails {
@@ -60,5 +64,33 @@
     self.productImgView.image = [UIImage imageWithData:imageData];
 }
 
+- (void)initializeGestures {
+    UISwipeGestureRecognizer *leftGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeftHandler:)];
+    [leftGesture setDirection:(UISwipeGestureRecognizerDirectionLeft)];
+    [self.view addGestureRecognizer:leftGesture];
+    
+    UISwipeGestureRecognizer *rightGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeRightHandler:)];
+    [rightGesture setDirection:(UISwipeGestureRecognizerDirectionRight)];
+    [self.view addGestureRecognizer:rightGesture];
+}
 
+- (void)swipeRightHandler:(UISwipeGestureRecognizer*)gesture {
+    
+    if (_index > 1 && [_productList objectAtIndex:_index-1] != [NSNull null]) {
+        _product = [_productList objectAtIndex:_index-1];
+        _index--;
+        
+        [self populateProductDetails];
+    }
+}
+
+- (void)swipeLeftHandler:(UISwipeGestureRecognizer*)gesture {
+    
+    if (_index < _productList.count-1 && [_productList objectAtIndex:_index+1] != [NSNull null]) {
+        _product = [_productList objectAtIndex:_index+1];
+        _index++;
+        
+        [self populateProductDetails];
+    }
+}
 @end
