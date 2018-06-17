@@ -17,7 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *productPriceLbl;
 @property (weak, nonatomic) IBOutlet UILabel *productNameLbl;
 @property (weak, nonatomic) IBOutlet UILabel *inStockLbl;
-
 @end
 
 @implementation ProductDetailViewController
@@ -43,6 +42,7 @@
     [super viewWillDisappear:animated];
 }
 
+
 #pragma mark - UI Helpers
 - (void) populateProductDetails {
     self.productNameLbl.text = _product.productName;
@@ -64,6 +64,8 @@
     self.productImgView.image = [UIImage imageWithData:imageData];
 }
 
+
+#pragma mark - Gestures
 - (void)initializeGestures {
     UISwipeGestureRecognizer *leftGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeftHandler:)];
     [leftGesture setDirection:(UISwipeGestureRecognizerDirectionLeft)];
