@@ -8,6 +8,8 @@
 
 #import "ProductDetailViewController.h"
 
+#define IMAGE_URL @"https://mobile-tha-server.appspot.com"
+
 @interface ProductDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *productImgView;
 @property (weak, nonatomic) IBOutlet UILabel *productDescLbl;
@@ -53,9 +55,8 @@
                                             ];
     self.productDescLbl.attributedText = attributedString;
     
-    NSString *imgUrlStr = [NSString stringWithFormat:@"https://mobile-tha-server.appspot.com%@", _product.productImage];
-    NSURL *url = [NSURL URLWithString:imgUrlStr];
-    NSData *imageData = [NSData dataWithContentsOfURL:url];
+    NSString *imgUrlStr = [NSString stringWithFormat:@"%@%@", IMAGE_URL, _product.productImage];
+    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imgUrlStr]];
     self.productImgView.image = [UIImage imageWithData:imageData];
 }
 
